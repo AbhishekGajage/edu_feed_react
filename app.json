@@ -1,36 +1,43 @@
 {
   "expo": {
-    "name": "edu_gram",
-    "slug": "edu_gram",
+    "name": "Edu-Feed",
+    "slug": "edu_gram_react",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "edugram",
+    "icon": "./assets/images/splash.png",
+    "scheme": "edugramreact",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#667EEA"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "foregroundImage": "./assets/images/app_icon.png",
+        "backgroundImage": "./assets/images/android-icon-background.png"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/app_icon.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/splash.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff",
@@ -38,7 +45,9 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      "expo-video",
+      "expo-audio"
     ],
     "experiments": {
       "typedRoutes": true,
